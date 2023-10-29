@@ -6,6 +6,15 @@
 我感觉我也会写了, 应该就是处理一次P, 维护一个数组arr[], arr[x]不为0时, 和P[x]比较, 相同可以+1, 不相同变成0开始重新和P[0]比较
 
 
+
+## 预处理
+其实就是最长公共前后缀, 用dp的方式来求
+举个例子
+abaabc
+001120
+当c匹配不上的时候, 主串index的i不动, 回退到前一个指向的2, 从P串的"ab"开始匹配
+
+
 ## ref
 https://www.zhihu.com/question/21923021
 https://oi-wiki.org/string/kmp/
